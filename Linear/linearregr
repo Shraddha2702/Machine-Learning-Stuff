@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 13 14:12:26 2017
+
+@author: SHRADDHA
+"""
+
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+from matplotlib import style
+
+style.use('fivethirtyeight')
+
+xs = [1,2,3,4,5]
+ys = [3,5,7,8,9]
+
+clf = LinearRegression()
+y_test=clf.fit(xs,ys).predict(11)
+
+print(y_test)
