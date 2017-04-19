@@ -47,7 +47,7 @@ X = np.array(df.drop(['label'],1))
 X = preprocessing.scale(X)
 X_lately = X[-forecast_out:]
 #print(X_lately)
-X = X[:-forecast_out]
+X = X[:-forecast_out:]
 
 Y = np.array(df['label'])
 Y = Y[:-forecast_out]
